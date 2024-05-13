@@ -53,7 +53,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className='lg:w-[620px] lg:h-[620px] md:w-[600px] md:h-[600px] h-[350px] flex absolute bottom-0 right-0 overflow-hidden'>
+      <div className='lg:w-[620px] lg:h-[620px] md:w-[600px] md:h-[600px] h-[50%] flex absolute bottom-0 right-0 overflow-hidden lg:mr-[75px]'>
         <div className='w-[500px] h-[500px] rounded-full bg-[#8C52FF] absolute object-cover mt-40 lg:ml-20 ml-2' />
         <img
           src={heroDP}
