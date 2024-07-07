@@ -3,26 +3,43 @@ import {
   backend,
   creator,
   web,
-  javascript,
-  typescript,
-  html,
+  angular,
+  bootstrap,
   css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
+  dotnet,
+  gatsby,
+  graphql,
+  html,
+  javascript,
+  java,
+  materialui,
   mongodb,
-  git,
-  figma,
-  docker,
+  mysql,
+  nodejs,
+  reactjs,
+  python,
+  sass,
+  typescript,
+  vitejs,
   ico99x,
   stc,
   uom,
   portfolio,
   journeyjive,
   weatherX,
-  threejs,
   shehan,
+  prasad,
+  email,
+  phone,
+  address,
+  linkedinPurple,
+  githubPurple,
+  whatsappPurple,
+  instagramPurple,
+  facebookPurple,
+  stackOverflowPurple,
+  mediumPurple,
+  emailPurple,
 } from "../assets";
 
 export const navLinks = [
@@ -48,9 +65,69 @@ export const navLinks = [
   },
 ];
 
+const socialLinks = [
+  { 
+    name: "LinkedIn",
+    link : "https://www.linkedin.com/in/harshana-batagalla-160a39250",
+    title: "@harshana-batagalla",
+    icon : linkedinPurple
+  },
+  {
+    name: "Github",
+    link : "https://github.com/harshanabatagalla",
+    title: "@harshanabatagalla",
+    icon : githubPurple
+  },
+  {
+    name: "Email",
+    link: "mailto:harshanabatagalla@gmail.com",
+    title: "harshanabatagalla@gmail.com",
+    icon: emailPurple
+  },
+  {
+    name: "Watsapp",
+    link: "https://wa.me/+94763226659",
+    title: "+94 76 322 6659",
+    icon: whatsappPurple
+  },
+  {
+    name: "Medium",
+    link: "https://medium.com/@harshanabatagalla",
+    title: "@harshanabatagalla",
+    icon: mediumPurple
+  },
+  {
+    name: "Stack Overflow",
+    link: "https://stackoverflow.com/users/18483031/harshana-batagalla",
+    title: "@harshanabatagalla",
+    icon: stackOverflowPurple
+  },
+  {
+    name: "Instagram",
+    link : 'https://www.instagram.com/_bataya/',
+    title: "@_bataya",
+    icon : instagramPurple
+  }
+];
+
+const contactInfo = [
+  {
+    icon: email,
+    info: '<a href="mailto:harshanabatagalla@gmail.com">harshanabatagalla@gmail.com</a>',
+  },
+  {
+    icon: phone,
+    info: '<a href="tel:+9476 322 6659">+94 76 322 6659</a>',
+  },
+  {
+    icon: address,
+    info: 'No.25,<br/>Koongahamula,<br/>Palapathwela,<br/>Matale,<br/>Sri Lanka.',
+  },
+];
+
 const services = [
   {
-    title: "Web Developer",
+    title: "Frontend Developer",
     icon: web,
   },
   {
@@ -67,15 +144,72 @@ const services = [
   },
 ];
 
-const technologies = [
+const frontendTech = [
   {
-    name: "HTML 5",
+    name: "HTML5",
     icon: html,
   },
   {
-    name: "CSS 3",
+    name: "CSS",
     icon: css,
   },
+  {
+    name: "Reactjs",
+    icon: reactjs,
+  },
+  {
+    name: "Angular",
+    icon: angular,
+  },
+  {
+    name: "Vite",
+    icon: vitejs,
+  },
+  {
+    name: "Gatsby",
+    icon: gatsby,
+  },
+  {
+    name: "Bootstrap",
+    icon: bootstrap,
+  },
+  {
+    name: "MaterialUI",
+    icon: materialui,
+  },
+  {
+    name: "Sass",
+    icon: sass,
+  },
+  {
+    name: "GraphQL",
+    icon: graphql,
+  }
+];
+
+const database = [
+  {
+    name: "MongoDB",
+    icon: mongodb,
+  },
+  {
+    name: "MySQL",
+    icon: mysql,
+  },
+];
+
+const backendTech = [
+  {
+    name: "Nodejs",
+    icon: nodejs,
+  },
+  {
+    name: ".Net",
+    icon: dotnet,
+  },
+];
+
+const programmingLanguages = [
   {
     name: "JavaScript",
     icon: javascript,
@@ -85,41 +219,13 @@ const technologies = [
     icon: typescript,
   },
   {
-    name: "React JS",
-    icon: reactjs,
+    name: "Java",
+    icon: java,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
+    name: "Python",
+    icon: python,
+  }
 ];
 
 const experiences = [
@@ -161,7 +267,7 @@ const educations = [
     icon: stc,
     iconBg: "#fff",
     date: "2011 - 2016",
-    description: "Completed with a score of 9 A-grades. My optional subjects were Geography, Eastern Music and ICT."
+    description: "Completed with a score of 9 A-grades. My optional subjects were ICT, Goegraphy and Music."
   }
 ];
 
@@ -174,6 +280,14 @@ const testimonials = [
     company: "99x",
     image: shehan,
   },
+  {
+    testimonial:
+      `Harshana's dedication and passion for technology were evident from the moment he embarked on his journey in the IT field.<br/><br/> During his tenure at the university, Harshana undertook a project that truly showcased his skills and innovative thinking. He spearheaded the development of a cutting-edge travel planning system, which not only optimized multi-destination trips by minimizing travel distances but also incorporated real-time weather updates and future forecasts. His commitment to delivering excellence was apparent in every aspect of the project, from its conceptualization to its execution...`,
+    name: "Prasad Srimal",
+    designation: "Technical Lead",
+    company: "Tech Venturas",
+    image: prasad,
+    }
 ];
 
 const projects = [
@@ -242,4 +356,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects, educations };
+export { services, frontendTech, backendTech, database, programmingLanguages, experiences, testimonials, projects, educations, socialLinks, contactInfo};

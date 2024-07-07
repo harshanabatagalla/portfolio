@@ -4,8 +4,8 @@ import { motion } from 'framer-motion'
 import emailjs from '@emailjs/browser'
 import { styles } from '../styles'
 import { SectionWrapper } from '../hoc'
-import { EarthCanvas } from './canvas'
 import { slideIn } from '../utils/motion'
+import { socialLinks } from '../constants'
 
 const Contact = () => {
   const formRef = useRef();
@@ -15,7 +15,7 @@ const Contact = () => {
     message: ''
   })
   const [loading, setLoading] = useState(false);
-  
+
   const handleChange = (e) => {
     const { target } = e;
     const { name, value } = target;
@@ -25,7 +25,7 @@ const Contact = () => {
       [name]: value,
     });
   };
-  
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
@@ -62,9 +62,9 @@ const Contact = () => {
         }
       );
   };
-  
+
   return (
-    <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
+    <div className='xl:mt-12 xl:flex-row flex-col flex gap-10'>
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
@@ -84,6 +84,7 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="What's your name?"
               className='bg-tertiary py-4 px-6 rounded-lg placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              required
             />
           </label>
           <label className='flex flex-col'>
@@ -94,6 +95,7 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="What's your email?"
               className='bg-tertiary py-4 px-6 rounded-lg placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              required
             />
           </label>
           <label className='flex flex-col'>
@@ -104,6 +106,7 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="What's on your mind?"
               className='bg-tertiary py-4 px-6 rounded-lg placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              required
             />
           </label>
           <button
@@ -117,10 +120,33 @@ const Contact = () => {
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
+        className='xl:flex-1 xl:h-auto p-8'
       >
-        <EarthCanvas />
+        <p className={styles.sectionSubText}>or</p>
+        <h3 className={styles.sectionHeadText}>Find me on</h3>
+
+        <div className='mt-10 flex flex-col gap-7'>
+          {socialLinks.map((link) => (
+            <a
+              href={link.link}
+              target='_blank'
+              key={link.name}
+              rel="noopener noreferrer"
+              className='flex items-center gap-3 cursor-pointer bg-black-100 p-2 rounded-2xl'
+            >
+              <div className='flex gap-3 items-center'>
+                <img src={link.icon} alt={link.name} className='row-span-2 w-10 h-10 md:ml-28' />
+                <div className='w-1 h-10 bg-white justify-self-center' />
+                <div className='flex flex-col '>
+                  <span className='text-white font-bold col-span-2'>{link.name}</span>
+                  <span className='text-white font-light col-span-2 md:text-base text-[10px]'>{link.title}</span>
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
       </motion.div>
+
 
     </div>
   )
