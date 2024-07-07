@@ -1,32 +1,34 @@
-import { w } from "maath/dist/misc-19a3ec46.esm";
 import {
   mobile,
   backend,
   creator,
   web,
-  javascript,
-  typescript,
-  html,
+  angular,
+  bootstrap,
   css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
+  dotnet,
+  gatsby,
+  graphql,
+  html,
+  javascript,
+  java,
+  materialui,
   mongodb,
-  git,
-  figma,
-  docker,
+  mysql,
+  nodejs,
+  reactjs,
+  python,
+  sass,
+  typescript,
+  vitejs,
   ico99x,
   stc,
   uom,
   portfolio,
   journeyjive,
   weatherX,
-  threejs,
   shehan,
-  linkedin,
-  githubContact,
-  instagram,
+  prasad,
   email,
   phone,
   address,
@@ -142,15 +144,72 @@ const services = [
   },
 ];
 
-const technologies = [
+const frontendTech = [
   {
-    name: "HTML 5",
+    name: "HTML5",
     icon: html,
   },
   {
-    name: "CSS 3",
+    name: "CSS",
     icon: css,
   },
+  {
+    name: "Reactjs",
+    icon: reactjs,
+  },
+  {
+    name: "Angular",
+    icon: angular,
+  },
+  {
+    name: "Vite",
+    icon: vitejs,
+  },
+  {
+    name: "Gatsby",
+    icon: gatsby,
+  },
+  {
+    name: "Bootstrap",
+    icon: bootstrap,
+  },
+  {
+    name: "MaterialUI",
+    icon: materialui,
+  },
+  {
+    name: "Sass",
+    icon: sass,
+  },
+  {
+    name: "GraphQL",
+    icon: graphql,
+  }
+];
+
+const database = [
+  {
+    name: "MongoDB",
+    icon: mongodb,
+  },
+  {
+    name: "MySQL",
+    icon: mysql,
+  },
+];
+
+const backendTech = [
+  {
+    name: "Nodejs",
+    icon: nodejs,
+  },
+  {
+    name: ".Net",
+    icon: dotnet,
+  },
+];
+
+const programmingLanguages = [
   {
     name: "JavaScript",
     icon: javascript,
@@ -160,41 +219,13 @@ const technologies = [
     icon: typescript,
   },
   {
-    name: "React JS",
-    icon: reactjs,
+    name: "Java",
+    icon: java,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
+    name: "Python",
+    icon: python,
+  }
 ];
 
 const experiences = [
@@ -249,6 +280,14 @@ const testimonials = [
     company: "99x",
     image: shehan,
   },
+  {
+    testimonial:
+      `Harshana's dedication and passion for technology were evident from the moment he embarked on his journey in the IT field.<br/><br/> During his tenure at the university, Harshana undertook a project that truly showcased his skills and innovative thinking. He spearheaded the development of a cutting-edge travel planning system, which not only optimized multi-destination trips by minimizing travel distances but also incorporated real-time weather updates and future forecasts. His commitment to delivering excellence was apparent in every aspect of the project, from its conceptualization to its execution...`,
+    name: "Prasad Srimal",
+    designation: "Technical Lead",
+    company: "Tech Venturas",
+    image: prasad,
+    }
 ];
 
 const projects = [
@@ -317,4 +356,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects, educations, socialLinks, contactInfo};
+export { services, frontendTech, backendTech, database, programmingLanguages, experiences, testimonials, projects, educations, socialLinks, contactInfo};
