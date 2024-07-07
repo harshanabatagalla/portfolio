@@ -128,13 +128,15 @@ const Contact = () => {
 
         <div className='mt-10 flex flex-col gap-7'>
           {socialLinks.map((link) => (
-            <div className='flex items-center gap-3 cursor-pointer bg-black-100 p-2 rounded-2xl' key={link.name}>
             <a
-              href={link.url}
+              href={link.link}
               target='_blank'
+              key={link.name}
+              rel="noopener noreferrer"
+              className='flex items-center gap-3 cursor-pointer bg-black-100 p-2 rounded-2xl'
             >
               <div className='flex gap-3 items-center'>
-                <img src={link.icon} alt={link.name} className='row-span-2 w-10 h-10 md:ml-48' />
+                <img src={link.icon} alt={link.name} className='row-span-2 w-10 h-10 md:ml-28' />
                 <div className='w-1 h-10 bg-white justify-self-center' />
                 <div className='flex flex-col '>
                   <span className='text-white font-bold col-span-2'>{link.name}</span>
@@ -142,10 +144,10 @@ const Contact = () => {
                 </div>
               </div>
             </a>
-            </div>
           ))}
         </div>
       </motion.div>
+
 
     </div>
   )
