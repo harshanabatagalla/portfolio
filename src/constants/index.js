@@ -1,3 +1,4 @@
+import { w } from "maath/dist/misc-19a3ec46.esm";
 import {
   mobile,
   backend,
@@ -23,6 +24,20 @@ import {
   weatherX,
   threejs,
   shehan,
+  linkedin,
+  githubContact,
+  instagram,
+  email,
+  phone,
+  address,
+  linkedinPurple,
+  githubPurple,
+  whatsappPurple,
+  instagramPurple,
+  facebookPurple,
+  stackOverflowPurple,
+  mediumPurple,
+  emailPurple,
 } from "../assets";
 
 export const navLinks = [
@@ -48,9 +63,69 @@ export const navLinks = [
   },
 ];
 
+const socialLinks = [
+  { 
+    name: "LinkedIn",
+    link : "https://www.linkedin.com/in/harshana-batagalla-160a39250",
+    title: "@harshana-batagalla",
+    icon : linkedinPurple
+  },
+  {
+    name: "Github",
+    link : "https://github.com/harshanabatagalla",
+    title: "@harshanabatagalla",
+    icon : githubPurple
+  },
+  {
+    name: "Email",
+    link: "mailto:harshanabatagalla@gmail.com",
+    title: "harshanabatagalla@gmail.com",
+    icon: emailPurple
+  },
+  {
+    name: "Watsapp",
+    link: "https://wa.me/+94763226659",
+    title: "+94 76 322 6659",
+    icon: whatsappPurple
+  },
+  {
+    name: "Medium",
+    link: "https://medium.com/@harshanabatagalla",
+    title: "@harshanabatagalla",
+    icon: mediumPurple
+  },
+  {
+    name: "Stack Overflow",
+    link: "https://stackoverflow.com/users/18483031/harshana-batagalla",
+    title: "@harshanabatagalla",
+    icon: stackOverflowPurple
+  },
+  {
+    name: "Instagram",
+    link : 'https://www.instagram.com/_bataya/',
+    title: "@_bataya",
+    icon : instagramPurple
+  }
+];
+
+const contactInfo = [
+  {
+    icon: email,
+    info: '<a href="mailto:harshanabatagalla@gmail.com">harshanabatagalla@gmail.com</a>',
+  },
+  {
+    icon: phone,
+    info: '<a href="tel:+9476 322 6659">+94 76 322 6659</a>',
+  },
+  {
+    icon: address,
+    info: 'No.25,<br/>Koongahamula,<br/>Palapathwela,<br/>Matale,<br/>Sri Lanka.',
+  },
+];
+
 const services = [
   {
-    title: "Web Developer",
+    title: "Frontend Developer",
     icon: web,
   },
   {
@@ -242,4 +317,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects, educations };
+export { services, technologies, experiences, testimonials, projects, educations, socialLinks, contactInfo};

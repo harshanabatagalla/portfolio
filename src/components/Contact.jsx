@@ -6,6 +6,7 @@ import { styles } from '../styles'
 import { SectionWrapper } from '../hoc'
 import { EarthCanvas } from './canvas'
 import { slideIn } from '../utils/motion'
+import { socialLinks } from '../constants'
 
 const Contact = () => {
   const formRef = useRef();
@@ -15,7 +16,7 @@ const Contact = () => {
     message: ''
   })
   const [loading, setLoading] = useState(false);
-  
+
   const handleChange = (e) => {
     const { target } = e;
     const { name, value } = target;
@@ -25,7 +26,7 @@ const Contact = () => {
       [name]: value,
     });
   };
-  
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
@@ -62,9 +63,9 @@ const Contact = () => {
         }
       );
   };
-  
+
   return (
-    <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
+    <div className='xl:mt-12 xl:flex-row flex-col flex gap-10'>
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
@@ -120,9 +121,30 @@ const Contact = () => {
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
+        className='xl:flex-1 xl:h-auto p-8'
       >
-        <EarthCanvas />
+        <p className={styles.sectionSubText}>or</p>
+        <h3 className={styles.sectionHeadText}>Find me on</h3>
+
+        <div className='mt-10 flex flex-col gap-7'>
+          {socialLinks.map((link) => (
+            <div className='flex items-center gap-3 cursor-pointer bg-black-100 p-2 rounded-2xl' key={link.name}>
+            <a
+              href={link.url}
+              target='_blank'
+            >
+              <div className='flex gap-3 items-center'>
+                <img src={link.icon} alt={link.name} className='row-span-2 w-10 h-10 md:ml-48' />
+                <div className='w-1 h-10 bg-white justify-self-center' />
+                <div className='flex flex-col '>
+                  <span className='text-white font-bold col-span-2'>{link.name}</span>
+                  <span className='text-white font-light col-span-2 md:text-base text-[10px]'>{link.title}</span>
+                </div>
+              </div>
+            </a>
+            </div>
+          ))}
+        </div>
       </motion.div>
 
     </div>

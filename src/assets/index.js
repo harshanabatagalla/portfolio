@@ -33,6 +33,25 @@ import weatherX from "./weatherX.png";
 
 import shehan from "./testimonials/shehan.jfif";
 
+import email from './contact/email.svg';
+import linkedin from './contact/linkedin.svg';
+import githubContact from './contact/github.svg';
+import phone from './contact/phone.svg';
+import address from './contact/map-pin.svg';
+import instagram from './contact/instagram.svg';
+
+import emailPurple from './contact/email-purple.png';
+import linkedinPurple from './contact/linkedin-purple.png';
+import githubPurple from './contact/github-purple.png';
+import whatsappPurple from './contact/whatsapp-purple.png';
+import instagramPurple from './contact/instagram-purple.png';
+import facebookPurple from './contact/facebook-purple.png';
+import stackOverflowPurple from './contact/stack-overflow-purple.png';
+import mediumPurple from './contact/medium-purple.png';
+
+
+
+
 export {
   logo,
   backend,
@@ -62,5 +81,19 @@ export {
   journeyjive,
   weatherX,
   shehan,
-  heroDP
+  heroDP,
+  email,
+  linkedin,
+  githubContact,
+  phone,
+  address,
+  instagram,
+  emailPurple,
+  linkedinPurple,
+  githubPurple,
+  whatsappPurple,
+  instagramPurple,
+  facebookPurple,
+  stackOverflowPurple,
+  mediumPurple
 };
