@@ -236,7 +236,7 @@ const educations = [
     icon: stc,
     iconBg: "#fff",
     date: "2011 - 2016",
-    description: "Completed with a score of 9 A-grades. My optional subjects were Geography, Eastern Music and ICT."
+    description: "Completed with a score of 9 A-grades. My optional subjects were ICT, Goegraphy and Music."
   }
 ];
 
