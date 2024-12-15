@@ -25,9 +25,10 @@ import sass from "./skills/sass.svg";
 import typescript from "./skills/typescript.svg";
 import vitejs from "./skills/vitejs.svg";
 import python from "./skills/python.svg";
+import mssql from "./skills/mssql.png";
 
 
-import heroDP from './hero_DP.png'
+import heroDP from './hero_DP_2.png'
 import ico99x from "./company/99x.png";
 
 import stc from "./education/stc.png";
@@ -35,10 +36,12 @@ import uom from "./education/uom.png";
 
 import portfolio from "./portfolio.png";
 import journeyjive from "./journey-jive.png";
-import weatherX from "./weatherX.png";
+import umbrellaGO from "./umbrellaGO.png";
 
 import shehan from "./testimonials/shehan.jfif";
 import prasad from "./testimonials/prasad.jfif";
+import pasinduG from "./testimonials/pasinduG.jpg";
+import chrishanD from "./testimonials/chrishanD.jpg";
 
 import email from './contact/email.svg';
 import linkedin from './contact/linkedin.svg';
@@ -77,6 +80,7 @@ export {
   materialui,
   mongodb,
   mysql,
+  mssql,
   nodejs,
   reactjs,
   sass,
@@ -88,9 +92,11 @@ export {
   uom,
   portfolio,
   journeyjive,
-  weatherX,
+  umbrellaGO,
   shehan,
   prasad,
+  pasinduG,
+  chrishanD,
   heroDP,
   email,
   linkedin,

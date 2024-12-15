@@ -26,7 +26,7 @@ import {
   uom,
   portfolio,
   journeyjive,
-  weatherX,
+  umbrellaGO,
   shehan,
   prasad,
   email,
@@ -40,6 +40,9 @@ import {
   stackOverflowPurple,
   mediumPurple,
   emailPurple,
+  pasinduG,
+  chrishanD,
+  mssql
 } from "../assets";
 
 export const navLinks = [
@@ -66,22 +69,22 @@ export const navLinks = [
 ];
 
 const socialLinks = [
-  { 
+  {
     name: "LinkedIn",
-    link : "https://www.linkedin.com/in/harshana-batagalla-160a39250",
+    link: "https://www.linkedin.com/in/harshana-batagalla-160a39250",
     title: "@harshana-batagalla",
-    icon : linkedinPurple
+    icon: linkedinPurple
   },
   {
     name: "Github",
-    link : "https://github.com/harshanabatagalla",
+    link: "https://github.com/harshanabatagalla",
     title: "@harshanabatagalla",
-    icon : githubPurple
+    icon: githubPurple
   },
   {
     name: "Email",
     link: "mailto:harshanabatagalla@gmail.com",
-    title: "harshanabatagalla@gmail.com",
+    title: "harshana.batagalla@gmail.com",
     icon: emailPurple
   },
   {
@@ -104,16 +107,16 @@ const socialLinks = [
   },
   {
     name: "Instagram",
-    link : 'https://www.instagram.com/_bataya/',
+    link: 'https://www.instagram.com/_bataya/',
     title: "@_bataya",
-    icon : instagramPurple
+    icon: instagramPurple
   }
 ];
 
 const contactInfo = [
   {
     icon: email,
-    info: '<a href="mailto:harshanabatagalla@gmail.com">harshanabatagalla@gmail.com</a>',
+    info: '<a href="mailto:harshanabatagalla@gmail.com">harshana.batagalla@gmail.com</a>',
   },
   {
     icon: phone,
@@ -196,6 +199,10 @@ const database = [
     name: "MySQL",
     icon: mysql,
   },
+  {
+    name: "MSSQL",
+    icon: mssql,
+  },
 ];
 
 const backendTech = [
@@ -234,7 +241,7 @@ const experiences = [
     company_name: "99x",
     icon: ico99x,
     iconBg: "#fff",
-    date: "January 2024 - July 2024",
+    date: "January 2024 - August 2024",
     points: [
       "Joined a six-month internship during my third year as an undergraduate.",
       "Contributed to the development of new features, including the homepage, and enhancements for the 99x official website <a href='https://99x.io' target='_blank'>(<u>https://99x.io </u>)</a>, a CMS-based website built using Gatsby.",
@@ -250,7 +257,7 @@ const educations = [
     company_name: "University of Moratuwa",
     icon: uom,
     iconBg: "#fff",
-    date: "june 2021 - present",
+    date: "June 2021 - present",
     description: "Currently pursuing a BSc. (Hons.) in Information Technology, actively engaging in coursework and practical projects to enhance skills for impactful contributions in the dynamic tech industry."
   },
   {
@@ -274,20 +281,42 @@ const educations = [
 const testimonials = [
   {
     testimonial:
+      `During Harshana's internship at 99x, I had the opportunity to observe his work in website development. Even in a short time, Harshana demonstrated an impressive ability to quickly adapt to new projects and technologies.</br></br>
+What stood out most about Harshana was his exceptional adaptability and eagerness to learn. He effectively managed website content development tasks, showing a keen eye for detail and a good grasp of user experience principles.</br></br>
+Colleagues often remarked on Harshana's friendly demeanor and supportive attitude, which contributed positively to the team dynamic. His ability to quickly understand and contribute to projects was remarkable.</br></br>
+Any team would benefit from Harshana's blend of technical aptitude, quick learning ability, and excellent interpersonal skills. I wholeheartedly recommend him for any role in web development or content management. He has a bright future ahead in the tech industry, and I look forward to seeing his continued growth and success.`,
+    name: "Pasindu Gunathilake",
+    designation: "Associate Technical Lead",
+    company: "99x",
+    image: pasinduG,
+  },
+  {
+    testimonial:
+      `Harshana's dedication and passion for technology were evident from the moment he embarked on his journey in the IT field. <br/>
+  During his tenure at the university, Harshana undertook a project that truly showcased his skills and innovative thinking. He spearheaded the development of a cutting-edge travel planning system, which not only optimized multi-destination trips by minimizing travel distances but also incorporated real-time weather updates and future forecasts. His commitment to delivering excellence was apparent in every aspect of the project, from its conceptualization to its execution.<br/><br/>
+  One of Harshana's key contributions to the project was his role in implementing the weather forecast feature. His meticulous attention to detail ensured that users received accurate and timely updates, thereby enhancing their overall travel experience. Additionally, Harshana played a pivotal role in suggesting tourist attractions based on user preferences, further enriching the functionality of the system.&nbsp;
+  <u><a href="https://www.linkedin.com/in/harshana-batagalla-160a39250/details/recommendations/" target="_blank" className="text-blue-500">See more...</a></u>`,
+    name: "Prasad Srimal",
+    designation: "Technical Lead",
+    company: "Tech Venturas",
+    image: prasad,
+  },
+  {
+    testimonial:
+      `Harshana provided excellent support on enhancements for the 99x.io website. He was proactive in understanding the requirement, sought clarifications and communicated progress. He was focused on getting the job done and in terms of quality, getting it right first time. I appreciate Harshana's contribution and wish him every success in the next steps of his career. All the very best!`,
+    name: "Chrishan de Mel",
+    designation: "Chief Marketing and Corporate Affairs Officer",
+    company: "99x",
+    image: chrishanD,
+  },
+  {
+    testimonial:
       "Harshana contributed to the 99x corporate website technical activities during his internship, and as a person who had to work alongside with him and overlook a few of the tasks that were handed to him, He did a splendid job at abiding to his deadlines and overall communication on the status of said tasks. Harshana is a self studying individual and I'm pleased to have had him on our team.",
     name: "Shehan Cooray",
     designation: "Senior Digital Marketing Executive",
     company: "99x",
     image: shehan,
   },
-  {
-    testimonial:
-      `Harshana's dedication and passion for technology were evident from the moment he embarked on his journey in the IT field.<br/><br/> During his tenure at the university, Harshana undertook a project that truly showcased his skills and innovative thinking. He spearheaded the development of a cutting-edge travel planning system, which not only optimized multi-destination trips by minimizing travel distances but also incorporated real-time weather updates and future forecasts. His commitment to delivering excellence was apparent in every aspect of the project, from its conceptualization to its execution...`,
-    name: "Prasad Srimal",
-    designation: "Technical Lead",
-    company: "Tech Venturas",
-    image: prasad,
-    }
 ];
 
 const projects = [
@@ -313,9 +342,9 @@ const projects = [
     source_code_link: "https://github.com/yukthi2000/semicolon",
   },
   {
-    name: "WeatherX",
+    name: "UmbrellaGO",
     description:
-      "A simple front-end weather application that fetches weather data from the OpenWeatherMap API and displays it to the user. Users can search for weather data by city name and view the current weather, temperature, wind speed and humidity levels, as well as the weather forecast for the next five days",
+      `A front-end weather application that fetches weather data from the OpenWeatherMap API and displays it to the user. Users can search for weather data by city name and view the current weather, temperature, wind speed and humidity levels, as well as the weather forecast for the next 16 days &nbsp; <u><a href="https://umbrellago.netlify.app/" target="_blank" class="text-blue-500">Visit</a></u>`,
     tags: [
       {
         name: "react",
@@ -330,8 +359,10 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: weatherX,
-    source_code_link: "https://github.com/harshanabatagalla/weatherX",
+    image: umbrellaGO,
+    source_code_link: "https://github.com/harshanabatagalla/umbrellaGo",
+    site_link: "https://umbrellago.netlify.app/",
+
   },
   {
     name: "My Portfolio",
@@ -356,4 +387,4 @@ const projects = [
   },
 ];
 
-export { services, frontendTech, backendTech, database, programmingLanguages, experiences, testimonials, projects, educations, socialLinks, contactInfo};
+export { services, frontendTech, backendTech, database, programmingLanguages, experiences, testimonials, projects, educations, socialLinks, contactInfo };
