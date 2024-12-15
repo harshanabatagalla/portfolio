@@ -65,8 +65,8 @@ const Contact = () => {
 
   return (
     <div className='xl:mt-12 xl:flex-row flex-col flex gap-10'>
-      <motion.div
-        variants={slideIn("left", "tween", 0.2, 1)}
+      <div
+        // variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
         <p className={styles.sectionSubText}>Get in touch</p>
@@ -105,7 +105,7 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder="What's on your mind?"
-              className='bg-tertiary py-4 px-6 rounded-lg placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
               required
             />
           </label>
@@ -116,10 +116,10 @@ const Contact = () => {
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
-      </motion.div>
+      </div>
 
-      <motion.div
-        variants={slideIn("right", "tween", 0.2, 1)}
+      <div
+        // variants={slideIn("right", "tween", 0.2, 1)}
         className='xl:flex-1 xl:h-auto p-8'
       >
         <p className={styles.sectionSubText}>or</p>
@@ -145,7 +145,7 @@ const Contact = () => {
             </a>
           ))}
         </div>
-      </motion.div>
+      </div>
 
 
     </div>

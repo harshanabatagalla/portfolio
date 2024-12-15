@@ -243,7 +243,7 @@ const experiences = [
     iconBg: "#fff",
     date: "January 2024 - August 2024",
     points: [
-      "Joined a six-month internship during my third year as an undergraduate.",
+      "Joined a eight-month internship during my third year as an undergraduate.",
       "Contributed to the development of new features, including the homepage, and enhancements for the 99x official website <a href='https://99x.io' target='_blank'>(<u>https://99x.io </u>)</a>, a CMS-based website built using Gatsby.",
       "Worked on the project portal of the company, a web application developed using Angular, .Net, and EF Core.",
       "Engaged in both front-end and back-end development of the project portal, gaining professional experience in Angular, .Net, EF Core, and SQL Server. ",
